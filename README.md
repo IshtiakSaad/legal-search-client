@@ -1,16 +1,112 @@
-# React + Vite
+# Legal Document Search - Client
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the **frontend** for the Legal Document Search application. It provides a responsive, minimalist interface for querying mock legal documents from the backend API.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## React Compiler
+* **React 18** (via Vite)
+* **TailwindCSS** for styling
+* **Vanilla JavaScript / JSX**
+* No UI frameworks (e.g., DaisyUI) used
+* Responsive, clean, and modern design
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Folder Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+legal-search-client
+    ├── public/
+    ├── src/
+    │   ├── assets/
+    │   │   ├── logo.png
+    │   │   └── react.svg
+    │   ├── component/
+    │   │   ├── Loader.jsx
+    │   │   ├── Result.jsx
+    │   │   ├── ResultList.jsx
+    │   │   └── SearchBox.jsx
+    │   ├── App.jsx
+    │   ├── index.css
+    │   └── main.jsx
+    ├── .gitignore
+    ├── index.html
+    ├── package.json
+    ├── run_frontend.sh
+    └── vite.config.js
+
+```
+
+---
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/IshtiakSaad/legal-search-client
+cd frontend
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Start the development server:
+
+```bash
+npm run dev
+```
+
+4. Open the app in your browser:
+
+```
+http://localhost:5173
+```
+
+---
+
+## API Connection
+
+The frontend expects the backend FastAPI server to be running locally at:
+
+```
+http://127.0.0.1:8000/generate
+```
+
+Make sure the backend is running to fetch mock legal documents.
+
+---
+
+## Usage
+
+1. Type your query (e.g., “Lease”, “NDA”, or “Will”) in the search box.
+2. Click **Search**.
+3. The app displays a summary and the corresponding mock document content.
+4. Loading and error states are handled gracefully.
+
+---
+
+## Notes
+
+* The frontend is designed to be **lightweight, responsive, and modular**.
+* Components are separated into `SearchBar`, `Loader`, and `ResultCard` for maintainability.
+* Styling is done entirely with **TailwindCSS**, without additional UI frameworks.
+
+---
+
+## Future Enhancements
+
+* Add glassmorphic cards or subtle gradient effects for premium aesthetics.
+* Implement a keyword-based search or AI-based ranking for smarter results.
+* Add history of queries and favorites.
+
+---
+
+## License
+
+MIT License
