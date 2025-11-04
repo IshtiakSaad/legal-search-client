@@ -8,7 +8,7 @@ const ResultList = ({ summary, title, document }) => {
     setActive(!active);
   };
   return (
-    <div className="w-full bg-white/70 p-6 rounded-lg">
+    <div className="w-full p-6 rounded-lg">
       <div className="flex items-center justify-between mb-4">
         <span className="text-xl font-semibold tracking-tight text-gray-600">Search Results</span>{" "}
         <span className="text-white rounded-full px-3 text-sm font-light bg-amber-500 py-1 shadow-sm">

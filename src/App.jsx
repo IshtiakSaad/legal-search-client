@@ -3,6 +3,7 @@ import SearchBox from "./component/SearchBox";
 import Loader from "./component/Loader";
 import ResultList from "./component/ResultList";
 import Navbar from "./component/navbar";
+import ErrorUI from "./component/ErrorUI";
 
 const App = () => {
   const [loading, setLoading] = useState(false);
@@ -46,13 +47,10 @@ const App = () => {
 
         {loading && <Loader />}
 
-        {error && (
-          <p className="text-center text-red-500 mt-4 font-medium">{error}</p>
-        )}
+        {error && <ErrorUI message={error}/>}
 
-        {result && (
-          <ResultList className="col-span-2" summary={result.summary} title={result.heading} document={result.document} />
-        )}
+        {result && <ResultList className="col-span-2" summary={result.summary} title={result.heading} document={result.document} />}
+     
       </div>
     </>
   );
