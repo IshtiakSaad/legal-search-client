@@ -2,7 +2,7 @@ import React from "react";
 
 const ResultDetails = ({ title, document }) => {
   return (
-    <div className="bg-white border-gray-300 border rounded-lg overflow-hidden">
+    <div className="bg-white border-gray-300 border rounded-lg max-h-[calc(100vh-180px)] overflow-y-auto shadow-md scrollbar-thin scrollbar-thumb-yellow-400 scrollbar-track-gray-100">
       <div className="flex bg-gray-50 p-4 justify-between border-b border-gray-300">
         <h1 className="text-xl">Document Details</h1>
       </div>

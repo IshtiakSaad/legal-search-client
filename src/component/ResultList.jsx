@@ -26,6 +26,7 @@ const ResultList = ({ summary, title, document }) => {
           >
             {summary}
           </h2>
+          <p className="m-4 text-gray-400 text-xs">Click to View Details</p>
         </div>
 
         {active && (
