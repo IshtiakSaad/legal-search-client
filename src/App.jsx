@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import SearchBox from "./component/SearchBox";
 import Loader from "./component/Loader";
 import ResultList from "./component/ResultList";
-import Navbar from "./component/navbar";
+import Navbar from "./component/Navbar";
 import ErrorUI from "./component/ErrorUI";
 
 const API_URL = import.meta.env.VITE_API_URL;
