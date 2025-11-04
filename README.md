@@ -41,31 +41,15 @@ legal-search-client
 
 ---
 
-## Installation
+## Setup & Run 
 
-1. Clone the repository:
-
-```bash
-git clone https://github.com/IshtiakSaad/legal-search-client
-cd frontend
+The included `run_frontend.sh` script automates the entire setup and launch process.
 ```
+# Make the run script executable
+chmod +x run_frontend.sh
 
-2. Install dependencies:
-
-```bash
-npm install
-```
-
-3. Start the development server:
-
-```bash
-npm run dev
-```
-
-4. Open the app in your browser:
-
-```
-http://localhost:5173
+# Run the script
+./run_frontend.sh
 ```
 
 ---
@@ -94,7 +78,7 @@ Make sure the backend is running to fetch mock legal documents.
 ## Notes
 
 * The frontend is designed to be **lightweight, responsive, and modular**.
-* Components are separated into `SearchBar`, `Loader`, and `ResultCard` for maintainability.
+* Components are separated into `SearchBox`, `Loader`, and `ResultList` for maintainability.
 * Styling is done entirely with **TailwindCSS**, without additional UI frameworks.
 
 ---
