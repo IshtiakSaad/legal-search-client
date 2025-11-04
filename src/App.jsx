@@ -17,6 +17,7 @@ const App = () => {
     setLoading(true);
     setResult(null);
 
+    console.log(API_URL)
 
     try {
       const res = await fetch(`${API_URL}/generate`, {
