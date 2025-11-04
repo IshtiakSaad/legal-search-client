@@ -10,7 +10,7 @@ const SearchBox = ({ onSearch, loading }) => {
     onSearch(query);
   };
   return (
-    <div className="p-8 pt-6 lg:min-h-screen bg-base-200 border-r border-gray-300 h-full">
+    <div className="p-8 pt-6 bg-base-200 border-r border-gray-300 min-h-screen pb-20">
       <div className="flex flex-col gap-1 mb-6">
         <h1 className="text-2xl font-bold text-gray-800">
           Legal Document Search

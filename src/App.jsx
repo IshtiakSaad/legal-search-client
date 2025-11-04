@@ -5,6 +5,8 @@ import ResultList from "./component/ResultList";
 import Navbar from "./component/navbar";
 import ErrorUI from "./component/ErrorUI";
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 const App = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -15,8 +17,9 @@ const App = () => {
     setLoading(true);
     setResult(null);
 
+
     try {
-      const res = await fetch("http://127.0.0.1:8000/generate", {
+      const res = await fetch(`${API_URL}/generate`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
