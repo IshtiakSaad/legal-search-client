@@ -21,11 +21,11 @@ legal-search-client
     ├── public/
     ├── src/
     │   ├── assets/
-    │   │   ├── logo.png
-    │   │   └── react.svg
     │   ├── component/
+    │   │   ├── ErrorUI.jsx
     │   │   ├── Loader.jsx
-    │   │   ├── Result.jsx
+    │   │   ├── Navbar.jsx
+    │   │   ├── ResultDetails.jsx
     │   │   ├── ResultList.jsx
     │   │   └── SearchBox.jsx
     │   ├── App.jsx
