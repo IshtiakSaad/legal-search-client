@@ -5,8 +5,8 @@ ECHO --- Frontend side setup starting ---
 
 :: install npm dependencies
 ECHO installing all npm dependencies (npm install)
-npm install
+CALL npm install
 
 :: Run the dev server
 ECHO Starting VITE development server
-npm run dev
+CALL npm run dev
