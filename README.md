@@ -34,7 +34,7 @@ legal-search-client
     ├── .gitignore
     ├── index.html
     ├── package.json
-    ├── run_frontend.sh
+    ├── run_frontend.bat
     └── vite.config.js
 
 ```
@@ -43,13 +43,10 @@ legal-search-client
 
 ## Setup & Run 
 
-The included `run_frontend.sh` script automates the entire setup and launch process.
+The included `run_frontend.bat` script automates the entire setup and launch process.
 ```
-# Make the run script executable
-chmod +x run_frontend.sh
-
 # Run the script
-./run_frontend.sh
+run_frontend.sh
 ```
 
 ---
